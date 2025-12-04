@@ -1,224 +1,1132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Our Philosophy | SpaceECE India Foundation</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpacECE – Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
 
-<style>
-/* Global */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-}
 
-body {
-    background: #fff;
-    color: #333;
-    line-height: 1.6;
-}
+    <style>
+        /* RESET */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-/* Title Section */
-.Title {
-    background: #ff9e00;
-    padding: 120px 8% 100px;
+        body {
+            font-family: "Livvic", sans-serif !important;
+            overflow-x: hidden;
+        }
+
+
+        /* HERO SECTION */
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 8%;
+            flex-wrap: wrap;
+        }
+
+        .hero-left {
+            width: 50%;
+            min-width: 320px;
+        }
+
+        .hero-left h1 {
+            font-size: 45px;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 25px;
+            color: #2c2c2c;
+        }
+
+        .changing-text {
+            font-size: 35px;
+            font-weight: 700;
+            color: #ffd04d;
+            height: 70px;
+            transition: .4s ease;
+        }
+
+        .hero-subtext {
+            font-size: 20px;
+            width: 80%;
+            color: #444;
+            margin-bottom: 30px;
+        }
+
+        .metrics {
+            font-size: 18px;
+            color: #2e2b96;
+            margin-bottom: 35px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .btn-enquire {
+            background: #e59434;
+            color: #fff;
+            padding: 14px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .btn-play {
+            background: #2b6fdb;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 28px;
+            text-decoration: none;
+        }
+
+        .hero-right {
+            width: 40%;
+            min-width: 300px;
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .hero-right img {
+            width: 130%;
+            max-width: 750px;
+            border-radius: 50px;
+            box-shadow: 0 4px 20px rgba(0,0,0,10);
+
+
+        }
+
+        /* MOBILE RESPONSIVE */
+        @media (max-width: 900px) {
+            .hero {
+                text-align: center;
+                flex-direction: column;
+            }
+
+            .hero-left, 
+            .hero-right {
+                width: 100%;
+            }
+
+            .hero-subtext {
+                width: 100%;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .hero-left h1 {
+                font-size: 34px;
+            }
+        }
+/* ================= TITLE SECTION ================= */
+.title {
+    background: radial-gradient(circle at left bottom, #FFFFFF 10%, #FFE5C8 50%, #FCD5A6 70%, #F8C792 100%);
+    padding: 50px 8%;
     text-align: center;
-    color: white;
 }
 
-.Title h1 {
-    font-size: 60px;
-    font-weight: 700;
+.mid-title h1 {
+    color: navy;
+    font-size: 32px;
 }
 
-.Title::after {
-    content: "";
-    width: 160px;
-    height: 6px;
-    background: white;
-    display: block;
-    margin: 18px auto 0;
-    border-radius: 10px;
+.mid-title p {
+    font-size: 18px;
+    margin-top: 10px;
 }
 
-/* Content Wrapper */
-.content-section {
-    padding: 80px 10%;
-}
-
-/* Main Block */
-.main-block {
-    width: 90%;
-    margin: 50px auto;
-    background: #fabffe;
-    border-radius: 20px;
-    padding: 30px;
-    box-shadow: 0 6px 25px rgba(0,0,0,0.12);
+/* ================= CART SECTION ================= */
+.cart-container {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 0;
 }
 
-.main-image img {
+.left-cart, .right-cart {
+    width: 48%;
+    min-width: 300px;
+    background: #E8F6F2;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.right-cart {
+    background: #EDE8FF;
+}
+
+.cart-container img {
     width: 100%;
-    height: auto;
-    border-radius: 18px;
+    border-radius: 12px;
+}
+
+.tag {
+    display: inline-block;
+    background: #3F5ACB;
+    padding: 7px 18px;
+    color: white;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+
+.right-cart p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+    .left-cart, .right-cart {
+        width: 100%;
+    }
+}
+
+/* ================= STATS SECTION ================= */
+.stats-section {
+background: #2F6F63; /* green background */ 
+padding: 70px 8% 110px; 
+position: relative;
+z-index: 2;
+border-bottom-left-radius: 30% 10%; 
+border-bottom-right-radius: 30% 10%;
+margin-bottom: -5%;
+}
+
+.stats-box-heding {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.stats-box-text {
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+/* ================= VIDEO BANNER ================= */
+.video-banner {
+position: relative; 
+height: 450px; 
+width: 100%; 
+overflow: hidden; 
+margin-top: -70px;
+}
+
+/* VIDEO */
+.video-banner video {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
-.main-text p {
-    font-size: 18px;
-    line-height: 1.8;
-    color: #3b3b3b;
+/* TEXT OVER VIDEO */
+.video-text {
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    text-align: center;
 }
 
-/* Block Styling */
-.block {
-    padding: 25px;
-    border-radius: 18px;
-    margin-bottom: 25px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+.video-text h1 {
+    font-size: 42px;
+    color: white;
+    font-weight: 800;
+    line-height: 1.3;
+    text-align: center;
+    text-shadow: 0 3px 10px rgba(0,0,0,0.5);
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 700px) {
+
+    .video-banner {
+        height: 260px;
+    }
+
+    .video-text h1 {
+        font-size: 24px;
+    }
+
+    .curve-top,
+    .curve-bottom {
+        margin-bottom: -60px;
+        margin-top: -60px;
+    }
+}
+
+
+/* ================= LEARNING SPACE SECTION ================= */
+.learning-space-section {
+background: #e8e3ff; /* lavender */ 
+padding: 110px 8% 120px; 
+text-align: center; 
+position: relative; 
+border-top-left-radius: 30% 5%; 
+border-top-right-radius: 30% 5%; 
+margin-top: -85px; /* pulls section upward to overlap video */ 
+z-index: 2;
+}
+
+.learning-title {
+    font-size: 32px;
+    text-align: center;
+    color: #2b1379;
+    font-weight: 700;
+}
+
+.learning-description {
+    text-align: left;
+    margin: 20px auto 40px;
+    max-width: 1000px;
+    color: #2b1379;
     font-size: 17px;
 }
 
-.block h3 {
-    font-size: 22px;
-    margin-bottom: 10px;
-    font-weight: 600;
+.learning-main-img {
+    width: 100%;
+    max-width: 700px;
+    margin: 20px auto 50px;
+    display: block;
+    border-radius: 20px;
 }
 
-/* Background Colors */
-.block1 { background: #FFF3E0; }
-.block2 { background: #E3F2FD; }
-.block3 { background: #E8F5E9; }
-.block4 { background: #F3E5F5; }
-.block5 { background: #FFF8E1; }
-.block6 { background: #FBE9E7; }
+/* 3-Cards Grid */
+.learning-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
 
-/* ===================== Responsive ===================== */
+.learning-card {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 10px 28px rgba(0,0,0,0.08);
+}
+
+.learning-card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+/* Responsive grid */
+@media (max-width: 900px) {
+    .learning-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .learning-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* ================= PARTNER SECTION ================= */
+.partner-section {
+    background: #1f2436;
+    padding: 60px 0;
+    color: white;
+}
+
+.partner-inner {
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.partner-content {
+    max-width: 700px;
+    text-align: center;
+}
+
+.partner-content img {
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+.partner-content p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+/* ================= IMAGE TESTIMONIAL SECTION ================= */
+.header-text {
+    text-align: center;
+    margin: 70px auto 50px;
+    max-width: 900px;
+    padding: 0 20px; /* avoids text touching edges on mobile */
+}
+
+/* Main Heading */
+.header-text h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #2e1a85;
+    margin-bottom: 12px;
+    line-height: 1.2;
+}
+
+/* Subtext */
+.header-text .sub-text {
+    font-size: 22px;
+    color: #6f6f6f;
+    font-weight: 400;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Extra Small Heading */
+.header-text h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2e1a85;
+    margin-top: 10px;
+}
+
+/* ============  Responsive Breakpoints ============ */
 
 /* Tablets */
-@media (max-width: 992px) {
-    .Title h1 {
-        font-size: 48px;
+@media (max-width: 1024px) {
+    .header-text h1 {
+        font-size: 40px;
     }
-
-    .content-section {
-        padding: 60px 6%;
-    }
-
-    .main-block {
-        width: 100%;
-        padding: 25px;
-    }
-
-    .main-text p,
-    .content p {
-        font-size: 17px;
+    .header-text .sub-text {
+        font-size: 20px;
     }
 }
 
-/* Mobile Screens */
+/* Large Mobile */
 @media (max-width: 768px) {
-    .Title {
-        padding: 90px 5% 60px;
+    .header-text {
+        margin: 50px auto 40px;
     }
-
-    .Title h1 {
-        font-size: 36px;
+    .header-text h1 {
+        font-size: 32px;
     }
-
-    .Title::after {
-        width: 120px;
-        height: 5px;
+    .header-text .sub-text {
+        font-size: 18px;
     }
-
-    .content-section {
-        padding: 40px 4%;
-    }
-
-    .main-block {
-        padding: 20px;
-    }
-
-    .block {
-        padding: 20px;
-        font-size: 16px;
+    .header-text h4 {
+        font-size: 18px;
     }
 }
 
-/* Extra Small Screens */
+/* Small Mobile */
 @media (max-width: 480px) {
-    .Title h1 {
-        font-size: 30px;
+    .header-text h1 {
+        font-size: 28px;
     }
-
-    .main-text p {
+    .header-text .sub-text {
+        font-size: 16px;
+    }
+    .header-text h4 {
         font-size: 16px;
     }
 }
+
+
+
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    width: 90%;
+    margin: 40px auto;
+}
+
+.images img {
+    width: 100%;
+    border-radius: 16px;
+}
+
+/* MOBILE */
+@media (max-width: 800px) {
+    .images {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 600px) {
+    .images {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ================= VIDEO SECTION ================= */
+.video-section {
+    width: 90%;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.video-title {
+    background: #ffa800;      /* Orange background */
+    color: #222;
+    text-align: center;
+    padding: 10px;
+    font-size: 32px;
+    font-weight: 700;
+    border-radius: 20px;      /* Same rounded corners */
+    width: 100%;
+    max-width:1200px;
+    margin: 40px auto;
+}
+
+.video-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.video-box {
+    width: 45%;
+    min-width: 300px;
+}
+
+.video-box iframe {
+    width: 100%;
+    height: 260px;
+    border-radius: 16px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.15);
+}
+
+/* ================= LOCATE US SECTION ================= */
+.locate-section {
+    background: #FFF1D6;
+    padding: 70px 8%;
+    margin-top: 60px;
+}
+
+.locate-title {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.locate-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.locate-box {
+    width: 30%;
+    min-width: 260px;
+}
+
+.locate-box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #2b1379;
+}
+
+.locate-box p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* MAP GRID */
+.map-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.map {
+    width: 100%;
+    height: 260px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+/* MOBILE MAP */
+@media (max-width: 700px) {
+    .map-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ================= JS FOR TEXT ROTATION ================= */
 </style>
 </head>
 
 <body>
 
-<!-- Title -->
-<div class="Title">
-    <h1>OUR PHILOSOPHY</h1>
+<!-- ======================= header-section ======================= -->
+<div class="top-bar">Call us @ +91 1800 4120 1580</div>
+<!----------------------------------------------- navbar ----------------------------------------------->
+<section>
+  <div class="container">
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo/logo.png" alt="Spacece Logo"></a>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.php">Home</a></li>
+
+            <!-- Programs -->
+            <li class="dropdown">
+                <a href="#">Programs ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Start your school</a></li>
+                    <li><a href="#">Upgrade your school</a></li>
+                </ul>
+            </li>
+
+            <!-- Solutions -->
+            <li class="dropdown">
+                <a href="#">Solutions ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">School transformation</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+            </li>
+
+            <!-- Training -->
+            <li class="dropdown">
+                <a href="#">Training ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">PTTC</a></li>
+                    <li><a href="#">Teacher training</a></li>
+                </ul>
+            </li>
+
+            <!-- Resources -->
+            <li class="dropdown">
+                <a href="#">Resources ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Articles</a></li>
+                    <li><a href="#">Gallery</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">FAQ’s</a></li>
+        </ul>
+
+
+        <!-- Enquire Button -->
+        <a class="enquire-btn" href="javascript:void(0)" onclick="openPopup()">Enquire Now</a>
+        <!-- POPUP -->
+        <div class="popup-overlay" id="popup">
+            <div class="popup-box">
+
+                <button class="close-popup" onclick="closePopup()">×</button>
+
+                <!-- 🔥 YOUR FULL ZOHO FORM — Unchanged -->
+                <form action="https://forms.zohopublic.com/kidoenterprises/form/KreedoWebsiteContactUsForm/formperma/UxHWZ_P2f6BEfg5Q5jJFP8txtfC_XkHyoDowK3rbSIA/htmlRecords/submit"
+                    name="form" method="POST" id="form" accept-charset="UTF-8">
+
+                    <h2>Please fill out the form below and we will respond within 24hrs</h2>
+
+                    <!-- Entire Zoho form code as you gave -->
+                    <!-- NOTHING changed inside -->
+                    <!-- Pasting your original form exactly as it is -->
+
+                    <!-- 🔽 START OF YOUR ORIGINAL FORM FIELDS -->
+                    <input type="hidden" name="zf_referrer_name">
+                    <input type="hidden" name="zf_redirect_url">
+                    <input type="hidden" name="zc_gad">
+                    <input type="hidden" name="utm_source" id="utm_source">
+                    <input type="hidden" name="utm_medium" id="utm_medium">
+                    <input type="hidden" name="utm_campaign" id="utm_campaign">
+                    <input type="hidden" name="utm_device" id="utm_device">
+                    <input type="hidden" name="utm_Adgroup" id="utm_Adgroup">
+                    <input type="hidden" name="gclid" id="gclid">
+                    <input type="hidden" name="referrername" id="referrername">
+
+                    <input type="text" name="SingleLine" placeholder="Enter your name" required>
+                    <input type="email" name="Email" placeholder="Enter Your Email" required>
+                    <input type="text" name="PhoneNumber_countrycode" placeholder="Number" pattern="[0-9]{10}" required>
+
+                    <select name="Dropdown" required>
+                        <option value="">Select State</option>
+                        <option>Maharashtra</option>
+                        <option>Gujarat</option>
+                    </select>
+
+                    <select name="Dropdown1" required>
+                        <option value="">Category</option>
+                        <option value="Individual">Starting a new school</option>
+                        <option value="K-12 School">Upgrading my school</option>
+                        <option value="Teacher">Interested in Teacher Training Course</option>
+                    </select>
+
+                    <textarea name="MultiLine" placeholder="Message"></textarea>
+
+                    <span id="captchaText">IqOmSl</span>
+                    <input type="text" placeholder="Enter the above text" required>
+
+                    <label>
+                        <input type="checkbox" checked>
+                        Please contact me via WhatsApp, SMS, Phone, and Email
+                    </label>
+
+                    <button class="zf-submitColor">Submit</button>
+                    <!-- 🔼 END OF ORIGINAL FORM FIELDS -->
+
+                </form>
+            </div>
+        </div>
+
+
+        <!-- Mobile Menu Icon -->
+        <button class="menu-btn" onclick="openMenu()">☰</button>
+    </nav>
+
+    <!-- BLACK OVERLAY -->
+    <div class="overlay" onclick="closeMenu()"></div>
+
+    <!-- SIDEBAR -->
+    <nav class="menu">
+        <button class="close-btn" onclick="closeMenu()">×</button>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+  </div>
+</section>
+
+
+
+<!-- ======================= hero-section ======================= -->
+    <section class="hero">
+    <div class="hero-left">
+        <h1>
+            Reinvent early education! <br>
+            Build an impactful <br>
+            <span class="changing-text" id="text-rotate">school</span>
+</h3>
+
+        </h1>
+            
+
+        <p class="hero-subtext">
+            Drive incredible outcomes in early years aligned with NEP / NCF and establish a powerful brand that parents trust.
+        </p>
+
+
+        <p class="metrics">
+            <b>3500+ Schools | 700,000+ children | 50% Better Outcomes</b>
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#" class="btn-enquire">Enquire Now ➜</a>
+            <a  href="https://www.youtube.com/embed/IZxkuVx7AGg?si=q880gx8FDXwwsOAW" class="btn-play">▶</a>
+        </div>
+    </div>
+
+    <div class="hero-right">
+        <img src="images/home.png" alt="">
+    </div>
 </div>
+</section>
 
-<!-- CONTENT -->
-<section class="content-section">
-    <div class="content">
+<section class="title">
+    <div class="mid-title">
+        <h1>Start your own preschool / school with a non-franchise and no-royalty solution
+ </h1>
+        <p>"Empowering Futures Through Early Childhood Excellence"</p>
+    </div>
+<!-- *****cart container***** -->
+    <div class="cart-container">
+        <!-- *****left cart***** -->
+        <div class="left-cart">
+            <img src="images/unnamed.png" alt="">
+        </div>  
+        <!-- *****right-cart***** -->
+        <div class="right-cart">
+            <a href="#" class="tag">"Empowering Futures Through Early Childhood Excellence"</a>
+            <p>SpacECE is committed to empowering children in their early years by building strong, engaging, and inclusive learning foundations. With a focus on school readiness and lifelong learning, SpacECE supports families and educators in creating meaningful early childhood experiences. Grounded in national policies like NEP 2020 and the ECCE framework, it works to reduce learning gaps, enhance readiness, and improve long-term outcomes for children. SpacECE ensures that every child, regardless of background, receives quality early education and the opportunity to thrive through equitable development and supportive learning systems. </p>
+        </div>    
+    </div>
+</section>
 
-        <!-- Main Block -->
-        <div class="main-block">
-            <div class="main-image">
-                <img src="about-us/image/main.jpg" alt="">
-            </div>
+<!-- ============================================================
+     WHY Home-as-a-Learning-SPACE SECTION
+     ============================================================ -->
+<section class="stats-section">
 
-            <div class="main-text">
-                <p>
-                At SpacECE India Foundation, we are guided by a strong and unwavering philosophy that drives our mission, vision, and approach to create lasting impact in the field of education. Our philosophy is deeply rooted in the belief that every child, regardless of their background or circumstances, deserves equal access to quality education and holistic development opportunities. We are committed to empowering children from underprivileged locations and ensuring that they have the necessary support and resources to thrive in their early years.
-                </p>
-            </div>
+  <!-- Wrapper box for heading + paragraph -->
+  <div class="stats-box">
+
+    <!-- Section Heading -->
+    <h3 class="stats-box-heding">Why Home-as-a-Learning-SPACE?</h3>
+
+    <!-- Divider Line -->
+    <hr>
+
+    <!-- Main Description Paragraph -->
+    <p class="stats-box-text">
+      Home-as-a-Learning-SPACE is important for early years development because the early years of a child's life are critical for their growth and development. During these years, children are developing their language, cognitive, emotional, and social skills, and their environment plays a significant role in shaping these skills.<br><br>
+
+      Creating a learning space at home can help to stimulate a child's curiosity, encourage exploration, and promote learning through play. This can be achieved by providing a safe, comfortable, and stimulating environment that is tailored to the child's interests, needs, and abilities.<br><br>
+      
+      When children are provided with a space that is conducive to learning, they are more likely to be engaged and motivated to explore, experiment, and learn. This, in turn, can help to build their confidence, resilience, and sense of autonomy, which are essential skills for success in school and in life.<br><br>
+      
+      Moreover, a home learning space can provide parents and caregivers with opportunities to engage with their children in meaningful and enjoyable learning activities. This can help to strengthen the bond between parents and children, promote positive parent-child interactions, and support children's social and emotional development.<br><br>
+      
+      Creating a home learning space is a simple yet effective way to support children's early years development and set them on a path towards lifelong learning and success.
+    </p>
+
+  </div>
+</section>
+
+
+
+<!-- video-bener -->
+<section class="video-banner">
+    <video autoplay muted loop playsinline>
+        <source src="video/baner.mp4" type="video/mp4">
+    </video>
+
+    <div class="video-text">
+        <h1>Blend Purpose with Play – Unlock the power of Activity-Based Learning.</h1>
+    </div>
+</section>
+
+
+
+
+
+<!-- ============================================================
+     LEARNING SPACE SECTION (Home-as-a-Learning-SPACE)
+     ============================================================ -->
+<section class="learning-space-section">
+    <!-- Section Heading -->
+    <h2 class="learning-title">Home-as-a-Learning-SPACE</h2>
+
+    <!-- Main heading paragraph -->
+    <h4 class="learning-description">
+        SpacECE India Foundation has launched “Home-as-a-Learning-SPACE,” a unique program that promotes early childhood education through experiential, hands-on learning at home. Designed for children aged 1 to 3 years, the program equips parents and caregivers with activity guides, learning kits, and educational games to create an engaging and development-focused learning environment. By making learning fun, accessible, and interactive, the initiative supports the development of essential competencies in young children, especially those with limited access to quality early education. Through this effort, SpacECE aims to empower families, nurture young minds, and cultivate a lifelong love for learning across communities in India.
+    </h4>
+
+    <!-- Main section banner image -->
+    <img src="images/Home-as-a-Learning-SPACE.jpg" alt="Home-as-a-Learning-SPACE" class="learning-main-img">
+
+    <!-- Grid wrapper for cards -->
+    <div class="learning-grid">
+
+        <!-- Card 1 -->
+        <div class="learning-card">
+            <h5>Connecting with Nature</h5>
+
+            <!-- Card image -->
+            <img src="images/Connecting with Nature.png" alt="">
+            <p>Such activities allow children to connect with nature and also support aesthetic development.</p>
         </div>
 
-        <!-- Blocks -->
-        <div class="block block1">
-            <h3 style="color:#94b1fc">Equity & Inclusion</h3>
-            <p>We firmly believe in the principles of equity and inclusion. We recognize that children from underprivileged locations often face systemic barriers that hinder their educational progress and overall development. Our philosophy is centered on breaking down these barriers, ensuring equal opportunities for all children, and creating an inclusive learning ecosystem that celebrates diversity.</p>
+        <!-- Card 2 -->
+        <div class="learning-card">
+            <h5>Experiencing Textures</h5>
+
+            <!-- Card image -->
+            <img src="images/Experiencing Textures.png" alt="">
+            <p>Children explore different textures. Playing with clay enhances creativity and fine motor skills.</p>
         </div>
 
-        <div class="block block2">
-            <h3 style="color:#ff9e00">Holistic Development</h3>
-            <p>We understand that education is not solely limited to academic learning. The holistic development of children encompasses their physical, cognitive, social, and emotional well-being. Our philosophy emphasizes a comprehensive approach to education that nurtures all aspects of a child's development, fostering their innate curiosity, creativity, and critical thinking skills.</p>
-        </div>
+        <!-- Card 3 -->
+        <div class="learning-card">
+            <h5>Sorting Objects</h5>
 
-        <div class="block block3">
-            <h3 style="color:#94b1fc">Early Intervention & Impact</h3>
-            <p>We believe in the power of early intervention. The early years of a child's life provide a critical window of opportunity for learning and growth. By focusing on early childhood education and development, we aim to create a strong foundation for lifelong learning, enabling children to reach their full potential and become active contributors to society.</p>
-        </div>
-
-        <div class="block block4">
-            <h3 style="color:#ff9e00">Collaboration & Partnerships</h3>
-            <p>We recognize that no organization can create meaningful and sustainable impact alone. Collaboration and partnerships lie at the heart of our philosophy. We actively seek partnerships with like-minded individuals, organizations, and stakeholders to leverage collective knowledge, resources, and expertise. Together, we can create a synergistic ecosystem that maximizes the impact of our efforts.</p>
-        </div>
-
-        <div class="block block5">
-            <h3 style="color:#94b1fc">Innovation & Adaptability</h3>
-            <p>In a rapidly changing world, we embrace innovation and adaptability as core tenets of our philosophy. We believe in staying at the forefront of educational advancements, leveraging technology, and exploring innovative approaches to address the evolving needs of children and communities. We strive to continuously adapt and refine our strategies to ensure relevance and effectiveness in an ever-changing landscape.</p>
-        </div>
-
-        <div class="block block6">
-            <h3 style="color:#ff9e00">Data-Driven Practice</h3>
-            <p>We are committed to evidence-based practice and data-driven decision-making. Our philosophy emphasizes rigorous research, monitoring, and evaluation to measure our impact, identify areas of improvement, and inform our programmatic interventions. By basing our actions on reliable data and insights, we can optimize our efforts and achieve meaningful outcomes.</p>
+            <!-- Card image -->
+            <img src="images/Sorting objects.png" alt="">
+            <p>Sorting familiar objects strengthens cognitive development and logical thinking.</p>
         </div>
 
     </div>
 </section>
 
+
+<!--================ partner-section ================-->
+<section class="partner-section">
+    <div class="partner-inner">
+         <!-- crnter content -->
+          <div class="partner-content">
+            <img src="images/Parents'-Capacity-Building.jpg" alt="Parents'-Capacity-Building">
+            <p>We understand the crucial role parents play in their children's education, and we are dedicated to supporting and empowering parents through our capacity-building programs. At SpacECE, we believe that parents are the first and most influential teachers in a child's life. By equipping parents with the necessary knowledge, skills, and resources, we aim to create a strong support system that fosters a love for learning and maximizes a child's educational journey.
+
+            Our capacity-building programs for parents focus on various aspects of education and child development. Through interactive workshops, training sessions, and resources, we provide parents with valuable insights and practical tools to actively engage in their child's education.</p>
+
+        </div>
+    </div>
+</section>
+
+
+<!--================ information with image ================-->
+
+<section>
+<div class="header-text">
+    <h1>Don’t take our word for it</h1>
+    <p class="sub-text">See for yourself, what educators are saying</p>
+    <h4>Making Children Pre-School Ready</h4>
+</div>
+
+<div class="image-container">
+
+    <div class="images">
+        <!-- SLIDE 1 -->
+            <div class="Making Children">
+                <img src="images/Making Children-1.png" alt="">
+            </div>
+        <!-- SLIDE 2 -->
+            <div class="Making Children">
+                <img src="images/Making Children-2.png" alt="">
+            </div>
+        <!-- SLIDE 3 -->
+            <div class="Making Children">
+                <img src="images/Making Children-3.png" alt="">
+            </div>
+    </div>
+</section>
+
+
+
+
+<!--================ video slider-section ================-->
+
+<section class="video-section">
+
+    <h2 class="video-title">Parents Testimonial</h2>
+
+    <div class="video-container">
+            <div class="video-box">
+                <iframe src="https://www.youtube.com/embed/1NTczyxt260?si=a72y9zPgvi12pddV" 
+                frameborder="0" allowfullscreen></iframe>
+            </div>   
+            <div class="video-box">
+                <iframe src="https://www.youtube.com/embed/7ts2h3KdWLM?si=8BlYT4deUJMMgiT5" 
+                frameborder="0" allowfullscreen></iframe>
+            </div>
+    </div>
+</section>
+
+
+<!-- ============================================================
+     LOCATE US SECTION
+     ============================================================ -->
+<section class="locate-section">
+
+    <!-- Section Title -->
+    <h2 class="locate-title">Locate us</h2>
+
+    <!-- Location Details: Office / Urban Slum / Rural -->
+    <div class="locate-grid">
+
+        <!-- Office Address -->
+        <div class="locate-box">
+            <h3>Office</h3>
+            <p>
+                C1-602, Chandralok Nagari,<br>
+                Ganesh Nagar, Dhayari, Pune.
+            </p>
+        </div>
+
+        <!-- Urban Slum Address -->
+        <div class="locate-box">
+            <h3>Field: Urban Slum</h3>
+            <p>
+                Gosavi Wasti,<br>
+                Karve Nagar, Pune.
+            </p>
+        </div>
+
+        <!-- Rural Address -->
+        <div class="locate-box">
+            <h3>Field: Rural</h3>
+            <p>
+                ShriramNagar,<br>
+                Khed Shivapur, Pune.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- Google Maps Section -->
+    <div class="map-grid">
+
+        <!-- Map 1 -->
+        <iframe class="map"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7569.419194533213!2d73.808422!3d18.451490000000003!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc29511ea741a71%3A0xbc6b4d3ee77b22ac!2sSitaee%20Nagar%2C%20Dhayari%2C%20Pune%2C%20Maharashtra%20411041%2C%20India!5e0!3m2!1sen!2sus!4v1764415102021!5m2!1sen!2sus" 
+            allowfullscreen loading="lazy">
+        </iframe>
+
+        <!-- Map 2 -->
+        <iframe class="map"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7567.47569846327!2d73.816335!3d18.495530000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfc2442e12e1%3A0xe1003db46c310bda!2sGosavi%20Vasti%2C%20Kothrud%2C%20Pune%2C%20Maharashtra%20411052%2C%20India!5e0!3m2!1sen!2sus!4v1764415204864!5m2!1sen!2sus" 
+            allowfullscreen loading="lazy">
+        </iframe>
+
+    </div>
+
+</section>
+
+
+<!-- ========================== footer-section ========================== -->
+
+<footer class="footer">
+    <div class="container">
+      <div class="footer-info">
+        <!-- Column 1: Logo + Social -->
+        <div class="footer-section">
+            <a href="index.html"><img src="images/logo/logo.png" class="footer-logo" alt="Preschool Logo"></a>
+
+            <p class="footer-text">
+                Building bright futures with joyful learning.
+            </p>
+
+            <!-- Google Map -->
+            <div class="footer-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.713390921391!2d73.80806407371841!3d18.45131787128889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc29513dc000001%3A0x6bcacb06efbe645c!2sSpacECE%20INDIA%20FOUNDATION!5e0!3m2!1sen!2sin!4v1764842317194!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+
+
+        <!-- Column 2: Contact Form (Parents Admission Inquiry) -->
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+
+            <form class="footer-form">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <input type="text" placeholder="Your Phone">
+                <select>
+                    <option>Select Program</option>
+                    <option>Playgroup</option>
+                    <option>Nursery</option>
+                    <option>Jr. KG</option>
+                    <option>Sr. KG</option>
+                </select>
+                <textarea placeholder="Message"></textarea>
+                <button type="submit" class="footer-btn">Submit</button>
+            </form>
+        </div>
+
+        <!-- Column 3: Quick Links -->
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <div class="link-wrap">
+              <ul class="footer-links">
+                <li><a href="#">About Preschool</a></li>
+                <li><a href="#">Our Programs</a></li>
+                <li><a href="#">Admissions</a></li>
+                <li><a href="#">Teacher Training</a></li>
+              </ul>
+              <ul class="footer-links">
+                <li><a href="#">Parent Resources</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">FAQs</a></li>
+              </ul>
+            </div>
+            <div class="footer-social">
+              <a href="https://www.facebook.com/SpacECE/"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://www.twitter.com/SpacECE/"><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://www.instagram.com/SpacECE/"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.youtube.com/SpacECE/"><i class="fa-brands fa-youtube"></i></a>
+              <a href="https://www.Whatsapp.com/SpacECE/"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+
+        </div>
+      </div>
+    </div>
+    <hr>
+    <!-- Bottom -->
+    <div class="footer-bottom">
+        © 2025 Your Preschool Name — All Rights Reserved
+    </div>
+</footer>
+<!--------------- menu button  ---------------->
+<script>
+function openMenu() {
+    document.querySelector('.menu').style.right = '0px';
+    document.querySelector('.overlay').style.display = 'block';
+}
+function closeMenu() {
+    document.querySelector('.menu').style.right = '-250px';
+    document.querySelector('.overlay').style.display = 'none';
+}
+</script>
+<!--------------- Equairy form popup-box  ---------------->
+<script>
+function openPopup() {
+    document.getElementById("popup").style.display = "block";
+    document.body.classList.add("no-scroll");
+}
+function closePopup() {
+    document.getElementById("popup").style.display = "none";
+    document.body.classList.remove("no-scroll");
+}
+</script>
+
+
+<!-- ====================================== school/preschool animistion ====================================== -->
+<script>
+const words = [
+    { text: "Preschool", color: "#2F7666" },  // green
+    { text: "School", color: "#F4B400" }      // yellow
+];
+
+let index = 0;
+
+function changeText() {
+    index = (index + 1) % words.length;
+    const textElement = document.getElementById("text-rotate");
+
+    textElement.style.opacity = 0;
+
+    setTimeout(() => {
+        textElement.innerText = words[index].text;
+        textElement.style.color = words[index].color;
+        textElement.style.opacity = 1;
+    }, 400);
+}
+
+setInterval(changeText, 2000);
+
+</script>
 </body>
 </html>
